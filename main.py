@@ -1,6 +1,7 @@
 import discord
 import crudLib
 import pymongo
+import tokenlib
 
 client = discord.Client()
 
@@ -42,4 +43,4 @@ async def on_message(message):
     #if message.content.startswith('hello'):
      #   await message.channel.send('Hello!')
 
-client.run('NzkwNzM1MTU1MTU2MzUzMDQ0.X-E7gA.4ou3FgeJU5Wh-4ORkb61JXSzpPg')
+client.run(tokenlib.bottoken)
